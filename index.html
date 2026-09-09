@@ -178,7 +178,7 @@ const NEWS_DATA = /*__DATA__*/{"updatedAt":"2026-09-09","regions":[{"key":"aba",
   fetch('./data.json?t=' + Date.now(), {cache:'no-store'})
     .then(r=>{ if(!r.ok) throw new Error('bad'); return r.json(); })
     .then(d=>boot(d))
-    .catch(()=>boot(FALLBACK_DATA));
+    .catch(()=>boot(NEWS_DATA));
 })();
 </script>
 </body>
